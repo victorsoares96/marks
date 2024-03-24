@@ -149,6 +149,8 @@ export class Highlight extends Mark {
             el.setAttribute('y', r.top - offset.top + container.top);
             el.setAttribute('height', r.height);
             el.setAttribute('width', r.width);
+            el.setAttribute('fill', this.attributes.fill);
+            el.setAttribute('fill-opacity', this.attributes['fill-opacity']);
             docFrag.appendChild(el);
         }
 
